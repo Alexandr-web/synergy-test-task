@@ -1,0 +1,5 @@
+@supports (backdrop-filter: blur(10px)) {
+    .modal-menu {
+        backdrop-filter: blur(10px);
+    }
+}

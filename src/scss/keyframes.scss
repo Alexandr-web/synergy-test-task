@@ -1,0 +1,19 @@
+@keyframes flying {
+    0% {
+        transform: translateY(-3px);
+    }
+
+    100% {
+        transform: translateY(3px);
+    }
+}
+
+@keyframes rotate-clockwise {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}

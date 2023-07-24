@@ -1,0 +1,34 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@glidejs/glide": "^3.6.0",
+    "aos": "^2.3.4",
+    "browser-sync": "^2.29.3",
+    "eslint": "^8.45.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.27.5",
+    "globalthis": "^1.0.3",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "normalize.css": "^8.0.1",
+    "sass": "^1.63.6",
+    "webpack": "^5.88.2",
+    "webpack-stream": "^7.0.0"
+  },
+  "devDependencies": {
+    "gulp-uglify": "^3.0.2",
+    "jquery": "^3.7.0"
+  }
+}
