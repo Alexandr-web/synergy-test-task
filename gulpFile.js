@@ -13,22 +13,22 @@ const browserSync = require("browser-sync").create();
 const paths = {
     scss: {
         from: "./src/scss/index.scss",
-        to: "./dist/css/",
+        to: "./docs/css/",
         watchSrc: "./src/scss/**/*.scss",
     },
     html: {
         from: "./src/index.html",
-        to: "./dist/",
+        to: "./docs/",
         watchSrc: "./src/*.html",
     },
     js: {
         from: "./src/js/index.js",
-        to: "./dist/js/",
+        to: "./docs/js/",
         watchSrc: "./src/js/**/*.js",
     },
     images: {
         from: "./src/images/**/*",
-        to: "./dist/images/",
+        to: "./docs/images/",
         watchSrc: "./src/images/**/*",
     },
 };
@@ -50,7 +50,7 @@ const stylesTask = () => {
 const jsTask = () => {
     return src(paths.js.from)
         .pipe(plumber())
-        .pipe(webpack({ mode: "development", }))
+        .pipe(webpack({ mode: "production", }))
         .pipe(uglify())
         .pipe(concat("index.js"))
         .pipe(dest(paths.js.to))
@@ -73,7 +73,7 @@ const server = () => {
     browserSync.init({
         server: {
             port: 3000,
-            baseDir: "./dist/",
+            baseDir: "./docs/",
         },
     });
 };
