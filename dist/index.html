@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speak</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="d-f ai-center jt-between header__wrapper">
+                <div class="header__wrapper-block">
+                    <a class="logo__link" href="#">
+                        <img class="logo logo--small" src="./images/logo.svg" alt="Логотип SPEAK">
+                    </a>
+                </div>
+                <div class="header__wrapper-block">
+                    <nav class="header__nav">
+                        <ul class="d-f ai-center jt-center g-40 header__menu">
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">About us</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">Blog</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__wrapper-block d-f ai-center g-20">
+                    <a class="shadow-grey btn btn--blue btn--small link-start-tell" href="#">Начать беседу</a>
+                    <button class="btn" type="button">
+                        <div class="d-f ai-center g-6 lang">
+                            <div class="d-f ai-center lang-icon">
+                                <img class="flag-icon" src="./images/flags.svg" alt="Флаг США">
+                            </div>
+                            <div class="d-f ai-center g-6 lang-info">
+                                <span class="lang-name">en</span>
+                                <img class="lang-options-icon" src="./images/chevron.svg" alt="Стрелка вниз">
+                            </div>
+                        </div>
+                    </button>
+                    <a class="shadow-grey btn btn--blue btn--big link-signin" href="#">Войти</a>
+                    <button class="d-f fd-column btn burger-menu" id="burger-modal-menu" type="button">
+                        <span class="burger-menu__line"></span>
+                        <span class="burger-menu__line"></span>
+                        <span class="burger-menu__line"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="modal-menu">
+        <div class="d-f fd-column modal-menu__wrapper">
+            <div class="d-f ai-center jt-between modal-menu__top">
+                <a class="logo__link" href="#">
+                    <img class="logo logo--small" src="./images/logo.svg" alt="Логотип SPEAK">
+                </a>
+                <button class="btn btn--cross" id="btn-close-modal-menu" type="button"></button>
+            </div>
+            <div class="modal-menu__bottom">
+                <nav class="d-f jt-center ai-center modal-menu__nav">
+                    <ul class="d-f fd-column modal-menu__list">
+                        <li class="modal-menu__list-item">
+                            <a class="modal-menu__list-link" href="#">About us</a>
+                        </li>
+                        <li class="modal-menu__list-item">
+                            <a class="modal-menu__list-link" href="#">Blog</a>
+                        </li>
+                        <li class="modal-menu__list-item">
+                            <a class="modal-menu__list-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="loader">
+        <div class="d-f jt-center ai-center loader__wrapper">
+            <div class="d-f jt-center ai-center loader__circle"></div>
+        </div>
+    </div>
+    <div class="welcome-section">
+        <div class="container">
+            <div class="d-f fd-column ai-center welcome-section__wrapper">
+                <div class="d-f fd-column ai-center welcome-section__top" data-aos="fade-zoom-in">
+                    <div class="welcome-section__wrapper-block welcome-section__headings">
+                        <h4 class="welcome-section__subtitle">+300 прошедших отбор психологов</h4>
+                        <h1 class="welcome-section__title">Сессии с психологом Онлайн</h1>
+                    </div>
+                    <div class="welcome-section__wrapper-block welcome-section__links">
+                        <a class="shadow-grey btn btn--blue btn--big" href="#">Начать беседу</a>
+                    </div>
+                </div>
+                <div class="d-f jt-center welcome-section__bottom" data-aos="fade-zoom-in">
+                    <picture class="welcome-section__image">
+                        <source media="(min-width: 768px)" srcset="./images/img_768.png">
+                        <source media="(min-width: 1024px)" srcset="./images/img_1024.png">
+                        <source media="(min-width: 1920px)" srcset="./images/img_1920.png">
+                        <img src="./images/img.png" alt="Летающий человек">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="download-section">
+        <div class="container">
+            <div class="d-f fd-column ai-center download-section__wrapper download-section__wrapper-video"
+                data-aos="fade-up">
+                <div class="download-section__video-block">
+                    <iframe class="shadow-light-green download-section__video"
+                        src="https://www.youtube.com/embed/DobIWkYZzR8"
+                        title="FLYING OVER  NORWAY (4K UHD) - Relaxing Music Along With Beautiful Nature Videos - 4K Video HD"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="download-section__content">
+                    <div class="download-section__wrapper-block">
+                        <h2 class="download-section__title">Скачайте бесплатно приложение SPEAK</h2>
+                    </div>
+                    <div class="d-f g-15 download-section__wrapper-block">
+                        <div class="d-f jt-center ai-center download-section__app-logo shadow-black">
+                            <img class="download-section__app-logo-image" src="./images/app-logo.svg" alt="S">
+                        </div>
+                        <div class="download-section__app-info">
+                            <h2 class="download-section__app-title">speak</h2>
+                            <p class="download-section__app-desc">
+                                онлайн сессии с психологом
+                                <br />
+                                доступно для iOS и Android
+                            </p>
+                        </div>
+                    </div>
+                    <div class="download-section__wrapper-block download-section__links d-f ai-center jt-center g-20">
+                        <a class="shadow-grey download-section__link" href="https://www.apple.com/ru/shop/goto/store">
+                            <img src="./images/appstore.png" alt="App Store">
+                        </a>
+                        <a class="shadow-grey download-section__link"
+                            href="https://play.google.com/store/apps/details?id=com.scopely.monopolygo&hl=ru&gl=US">
+                            <img src="./images/playstore.png" alt="Google Play">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="speakers-section">
+        <div class="container">
+            <div class="d-f fd-column speakers-section__wrapper">
+                <div class="speakers-section__wrapper-block">
+                    <h2 class="speakers-section__title">Психологи, работающие с актуальными темами</h2>
+                </div>
+                <div class="d-f fd-column ai-center speakers-section__wrapper-block">
+                    <ul class="d-f jt-center ai-center fw-wrap g-15 speakers-section__tags">
+                        <li class="speakers-section__tag">
+                            <a class="speakers-section__tag-link shadow-black" href="#">Чувства</a>
+                        </li>
+                        <li class="speakers-section__tag">
+                            <a class="speakers-section__tag-link shadow-black" href="#">Одиночество</a>
+                        </li>
+                        <li class="speakers-section__tag">
+                            <a class="speakers-section__tag-link shadow-black" href="#">Вредные привычки</a>
+                        </li>
+                        <li class="speakers-section__tag">
+                            <a class="speakers-section__tag-link shadow-black" href="#">Отношения</a>
+                        </li>
+                        <li class="speakers-section__tag">
+                            <a class="speakers-section__tag-link shadow-black" href="#">Работа</a>
+                        </li>
+                        <li class="speakers-section__tag">
+                            <a class="speakers-section__tag-link shadow-black" href="#">Смыслы</a>
+                        </li>
+                        <li class="speakers-section__tag">
+                            <a class="speakers-section__tag-link shadow-black" href="#">Одиночество</a>
+                        </li>
+                        <li class="speakers-section__tag">
+                            <a class="speakers-section__tag-link shadow-black" href="#">Отношения с близкими</a>
+                        </li>
+                        <li class="speakers-section__tag">
+                            <a class="btn btn--blue shadow-black speakers-section__tag-link speakers-section__tag-link--active"
+                                href="#">+ 300 психологов</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="speakers-section__wrapper-block">
+                    <div class="slider glide speakers-section__slider">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="slider__slides glide__slides">
+                                <li class="d-f fd-column jt-between slider__slide glide__slide shadow-black">
+                                    <div class="slider__slide-top">
+                                        <img class="slider__slide-image" src="./images/photo.png" alt="Илья Благов">
+                                        <h3 class="slider__slide-title">Илья Благов</h3>
+                                    </div>
+                                    <div class="d-f ai-center jt-between slider__slide-bottom">
+                                        <ul class="d-f ai-center g-5 slider__slide-stars">
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                        </ul>
+                                        <div data-glide-el="controls">
+                                            <button class="btn slider__slide-btn d-f fd-column ai-center"
+                                                data-glide-dir=">" type="button">
+                                                <img class="slider__slide-arrow" src="./images/arrow-right.svg"
+                                                    alt="Стрелка вправо">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="d-f fd-column jt-between slider__slide glide__slide shadow-black">
+                                    <div class="slider__slide-top">
+                                        <img class="slider__slide-image" src="./images/photo.png" alt="Илья Благов">
+                                        <h3 class="slider__slide-title">Илья Благов</h3>
+                                    </div>
+                                    <div class="d-f ai-center jt-between slider__slide-bottom">
+                                        <ul class="d-f ai-center g-5 slider__slide-stars">
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                        </ul>
+                                        <div data-glide-el="controls">
+                                            <button class="btn slider__slide-btn d-f fd-column ai-center"
+                                                data-glide-dir=">" type="button">
+                                                <img class="slider__slide-arrow" src="./images/arrow-right.svg"
+                                                    alt="Стрелка вправо">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="d-f fd-column jt-between slider__slide glide__slide shadow-black">
+                                    <div class="slider__slide-top">
+                                        <img class="slider__slide-image" src="./images/photo.png" alt="Илья Благов">
+                                        <h3 class="slider__slide-title">Илья Благов</h3>
+                                    </div>
+                                    <div class="d-f ai-center jt-between slider__slide-bottom">
+                                        <ul class="d-f ai-center g-5 slider__slide-stars">
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                        </ul>
+                                        <div data-glide-el="controls">
+                                            <button class="btn slider__slide-btn d-f fd-column ai-center"
+                                                data-glide-dir=">" type="button">
+                                                <img class="slider__slide-arrow" src="./images/arrow-right.svg"
+                                                    alt="Стрелка вправо">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="d-f fd-column jt-between slider__slide glide__slide shadow-black">
+                                    <div class="slider__slide-top">
+                                        <img class="slider__slide-image" src="./images/photo.png" alt="Илья Благов">
+                                        <h3 class="slider__slide-title">Илья Благов</h3>
+                                    </div>
+                                    <div class="d-f ai-center jt-between slider__slide-bottom">
+                                        <ul class="d-f ai-center g-5 slider__slide-stars">
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                        </ul>
+                                        <div data-glide-el="controls">
+                                            <button class="btn slider__slide-btn d-f fd-column ai-center"
+                                                data-glide-dir=">" type="button">
+                                                <img class="slider__slide-arrow" src="./images/arrow-right.svg"
+                                                    alt="Стрелка вправо">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="d-f fd-column jt-between slider__slide glide__slide shadow-black">
+                                    <div class="slider__slide-top">
+                                        <img class="slider__slide-image" src="./images/photo.png" alt="Илья Благов">
+                                        <h3 class="slider__slide-title">Илья Благов</h3>
+                                    </div>
+                                    <div class="d-f ai-center jt-between slider__slide-bottom">
+                                        <ul class="d-f ai-center g-5 slider__slide-stars">
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                        </ul>
+                                        <div data-glide-el="controls">
+                                            <button class="btn slider__slide-btn d-f fd-column ai-center"
+                                                data-glide-dir=">" type="button">
+                                                <img class="slider__slide-arrow" src="./images/arrow-right.svg"
+                                                    alt="Стрелка вправо">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="d-f ai-center jt-center slider__dots glide__bullets" data-glide-el="controls[nav]">
+                            <button class="btn slider__dot glide__bullet" data-glide-dir="=0" type="button"></button>
+                            <button class="btn slider__dot glide__bullet" data-glide-dir="=1" type="button"></button>
+                            <button class="btn slider__dot glide__bullet" data-glide-dir="=2" type="button"></button>
+                            <button class="btn slider__dot glide__bullet" data-glide-dir="=3" type="button"></button>
+                            <button class="btn slider__dot glide__bullet" data-glide-dir="=4" type="button"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="help-section">
+        <div class="container">
+            <div class="help-section__wrapper">
+                <div class="help-section__wrapper-block">
+                    <h2 class="help-section__title">Поможем вам</h2>
+                    <ul class="d-f fd-column g-15 help-section__list">
+                        <li class="d-f ai-first-baseline help-section__list-item">
+                            <div class="d-f jt-center ai-center help-section__list-item-mark">
+                                <img class="help-section__list-item-icon" src="./images/check.svg" alt="Галочка">
+                            </div>
+                            <p class="help-section__list-item-desc">Разрешить причины сложных отношений с партнером</p>
+                        </li>
+                        <li class="d-f ai-first-baseline help-section__list-item">
+                            <div class="d-f jt-center ai-center help-section__list-item-mark">
+                                <img class="help-section__list-item-icon" src="./images/check.svg" alt="Галочка">
+                            </div>
+                            <p class="help-section__list-item-desc">Снять или снизить остроту переживаний</p>
+                        </li>
+                        <li class="d-f ai-first-baseline help-section__list-item">
+                            <div class="d-f jt-center ai-center help-section__list-item-mark">
+                                <img class="help-section__list-item-icon" src="./images/check.svg" alt="Галочка">
+                            </div>
+                            <p class="help-section__list-item-desc">Справиться с выгоранием на работе и найти мотивацию
+                            </p>
+                        </li>
+                        <li class="d-f ai-first-baseline help-section__list-item">
+                            <div class="d-f jt-center ai-center help-section__list-item-mark">
+                                <img class="help-section__list-item-icon" src="./images/check.svg" alt="Галочка">
+                            </div>
+                            <p class="help-section__list-item-desc">Понять себя в отношениях с близкими людьми</p>
+                        </li>
+                        <li class="d-f ai-first-baseline help-section__list-item">
+                            <div class="d-f jt-center ai-center help-section__list-item-mark">
+                                <img class="help-section__list-item-icon" src="./images/check.svg" alt="Галочка">
+                            </div>
+                            <p class="help-section__list-item-desc">Найти себя и понимать свои желания</p>
+                        </li>
+                        <li class="d-f ai-first-baseline help-section__list-item">
+                            <div class="d-f jt-center ai-center help-section__list-item-mark">
+                                <img class="help-section__list-item-icon" src="./images/check.svg" alt="Галочка">
+                            </div>
+                            <p class="help-section__list-item-desc">Исследовать и управлять изменениями в своей жизни
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="help-section__wrapper-block help-section__image-block" data-aos="fade-zoom-in">
+                    <img class="help-section__image" src="./images/help.png" alt="Помощь">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="advantage-section">
+        <div class="container">
+            <div class="d-f fd-column advantage-section__wrapper">
+                <div class="advantage-section__wrapper-block advantage-section__mobile">
+                    <img class="advantage-section__mobile-img" src="./images/Mobile.png" alt="Телефон">
+                </div>
+                <div class="advantage-section__wrapper-block advantage-section__content">
+                    <h2 class="advantage-section__title">Преимущества онлайн сессий с психологом</h2>
+                    <ul class="d-f fd-column g-20 advantage-section__list">
+                        <li class="d-f fd-column advantage-section__list-item">
+                            <h3 class="d-f advantage-section__list-item-title">Занимайтесь где и как удобно</h3>
+                            <p class="advantage-section__list-item-desc">Дома или в поездке и в любом часовом поясе</p>
+                        </li>
+                        <li class="d-f fd-column advantage-section__list-item">
+                            <h3 class="d-f advantage-section__list-item-title">Меньше забот- больше мотивации</h3>
+                            <p class="advantage-section__list-item-desc">Не тратьте время на дорогу и управляйте
+                                занятиями в два клика</p>
+                        </li>
+                        <li class="d-f fd-column advantage-section__list-item">
+                            <h3 class="d-f advantage-section__list-item-title">Доверяйте себе</h3>
+                            <p class="advantage-section__list-item-desc">Выбирайте среди проверенных психологов, которые
+                                специаллизируются на ваших запросах</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="steps-section">
+        <div class="container">
+            <div class="d-f fd-column steps-section__wrapper">
+                <div class="steps-section__content">
+                    <div class="d-f fd-column steps-section__headings">
+                        <h2 class="steps-section__title">Как мы отбираем специалистов?</h2>
+                        <h3 class="steps-section__subtitle">Отбор проходят меньше 10% специаллистов</h3>
+                    </div>
+                    <ul class="d-f fd-column g-20 steps-section__list">
+                        <li class="d-f fd-column steps-section__list-item">
+                            <span class="steps-section__list-item-num">1</span>
+                            <h3 class="steps-section__list-item-title">Документы об образовании</h3>
+                            <p class="steps-section__list-item-desc">Обязательно иметь высшее психологическое
+                                образование и сертификаты для ведения психотерапии</p>
+                        </li>
+                        <li class="d-f fd-column steps-section__list-item">
+                            <span class="steps-section__list-item-num">2</span>
+                            <h3 class="steps-section__list-item-title">Опыт частной практики и личной терапии</h3>
+                            <p class="steps-section__list-item-desc">Нужно не менее 3-х лет частной практики, личная
+                                терапия и регулярные супервизии</p>
+                        </li>
+                        <li class="d-f fd-column steps-section__list-item">
+                            <span class="steps-section__list-item-num">3</span>
+                            <h3 class="steps-section__list-item-title">Собеседование с нашим экспертом-ментором</h3>
+                            <p class="steps-section__list-item-desc">Отслеживаются коммуникативные способности, уровень
+                                эмпатии, манера и стиль беседы, проффесиональные компетенции</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-f jt-center steps-section__image-block">
+                    <img class="steps-section__image" src="./images/img_steps.png" alt="Человек держит в руке планшет">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about-section">
+        <div class="container">
+            <div class="about-section__wrapper">
+                <h2 class="about-section__title">О сервисе</h2>
+                <div class="about-section__content">
+                    <ul class="d-f jt-between g-20 about-section__list">
+                        <li class="d-f fd-column about-section__list-item">
+                            <h3 class="about-section__list-item-title">900+</h3>
+                            <span class="about-section__list-item-text">регистраций вчера</span>
+                        </li>
+                        <li class="d-f fd-column about-section__list-item">
+                            <h3 class="about-section__list-item-title">75 000+</h3>
+                            <span class="about-section__list-item-text">проведено сессий</span>
+                        </li>
+                        <li class="d-f fd-column about-section__list-item">
+                            <h3 class="about-section__list-item-title">354+</h3>
+                            <span class="about-section__list-item-text">психологов</span>
+                        </li>
+                    </ul>
+                    <div class="d-f jt-center about-section__video-block">
+                        <iframe class="shadow-light-green about-section__video"
+                            src="https://www.youtube.com/embed/DobIWkYZzR8"
+                            title="FLYING OVER  NORWAY (4K UHD) - Relaxing Music Along With Beautiful Nature Videos - 4K Video HD"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <ul class="d-f fd-column g-20 about-section__services">
+                        <li class="d-f jt-between shadow-black about-section__service">
+                            <div class="about-section__service-image-block">
+                                <img class="about-section__service-image" src="./images/img_service1.png"
+                                    alt="Календарь">
+                            </div>
+                            <div class="about-section__service-content">
+                                <h4 class="about-section__service-title">Подбор “По позже”</h4>
+                                <p class="about-section__service-desc">Подбор с возможностью бронирование сессии на
+                                    будущее</p>
+                            </div>
+                        </li>
+                        <li class="d-f jt-between shadow-black about-section__service">
+                            <div class="about-section__service-image-block">
+                                <img class="about-section__service-image" src="./images/img_service2.png" alt="Часы">
+                            </div>
+                            <div class="about-section__service-content">
+                                <h4 class="about-section__service-title">Подбор “Сейчас”</h4>
+                                <p class="about-section__service-desc">Подбор с возможностью начала сессии “здесь и
+                                    сейчас”</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="how-work-section">
+        <div class="container">
+            <div class="d-f fd-column ai-center how-work-section__wrapper">
+                <h2 class="how-work-section__title">Как это устроено</h2>
+                <div class="how-work-section__content">
+                    <header class="how-work-section__header">
+                        <ul class="d-f jt-center ai-center how-work-section__header-steps">
+                            <li class="d-f ai-center how-work-section__header-step">
+                                <button
+                                    class="btn d-f jt-center ai-center step-btn how-work-section__header-step-btn js-tab-step-btn"
+                                    data-tab-num-content="0" type="button">1</button>
+                            </li>
+                            <li class="d-f ai-center how-work-section__header-step">
+                                <button
+                                    class="btn d-f jt-center ai-center step-btn how-work-section__header-step-btn js-tab-step-btn"
+                                    data-tab-num-content="1" type="button">2</button>
+                            </li>
+                            <li class="d-f ai-center how-work-section__header-step">
+                                <button
+                                    class="btn d-f jt-center ai-center step-btn how-work-section__header-step-btn js-tab-step-btn"
+                                    data-tab-num-content="2" type="button">3</button>
+                            </li>
+                            <li class="d-f ai-center how-work-section__header-step">
+                                <button
+                                    class="btn d-f jt-center ai-center step-btn how-work-section__header-step-btn js-tab-step-btn"
+                                    data-tab-num-content="3" type="button">4</button>
+                            </li>
+                        </ul>
+                    </header>
+                    <div class="d-f fd-column how-work-section__step">
+                        <div class="how-work-section__step-block">
+                            <header class="d-f how-work-section__step-header">
+                                <button class="btn d-f jt-center ai-center step-btn js-tab-step-btn"
+                                    data-tab-num-content="0" type="button">1</button>
+                                <h3 class="how-work-section__step-title">Заполните простую анкету</h3>
+                            </header>
+                            <p class="how-work-section__step-desc">Расскажите, что вас беспокоит и что важно в
+                                психологе.</p>
+                        </div>
+                        <div class="how-work-section__step-block">
+                            <header class="d-f how-work-section__step-header">
+                                <button class="btn d-f jt-center ai-center step-btn js-tab-step-btn"
+                                    data-tab-num-content="2" type="button">3</button>
+                                <h3 class="how-work-section__step-title">Выберите способ связи с психологом</h3>
+                            </header>
+                            <p class="how-work-section__step-desc">
+                                49руб/мин по <span class="light-green">аудио/видео связи</span><br />200руб за 24 часа
+                                <span class="light-green">чата + аудио сообщения</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-f jt-center ai-center how-work-section__mobile">
+                        <picture class="how-work-section__mobile-phone">
+                            <source media="(max-width: 768px)" srcset="./images/howWorkMobile_768.png" />
+                            <source media="(max-width: 1024px)" srcset="./images/howWorkMobile_1024.png" />
+                            <source media="(max-width: 1920px)" srcset="./images/howWorkMobile_1920.png" />
+                            <img class="how-work-section__mobile-image" src="./images/howWorkMobile_360.png"
+                                alt="Телефон IPhone">
+                        </picture>
+                        <div class="d-f jt-center ai-center how-work-section__mobile-screen js-tab-step-content">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="./images/screenMobile_768.png" />
+                                <source media="(max-width: 1024px)" srcset="./images/screenMobile_1024.png" />
+                                <source media="(max-width: 1920px)" srcset="./images/screenMobile_1920.png" />
+                                <img class="how-work-section__mobile-screen-image" src="./images/screenMobile_360.png"
+                                    alt="Скриншот экрана">
+                            </picture>
+                        </div>
+                        <div class="d-f jt-center ai-center how-work-section__mobile-screen js-tab-step-content">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="./images/screenMobile_768.png" />
+                                <source media="(max-width: 1024px)" srcset="./images/screenMobile_1024.png" />
+                                <source media="(max-width: 1920px)" srcset="./images/screenMobile_1920.png" />
+                                <img class="how-work-section__mobile-screen-image" src="./images/screenMobile_360.png"
+                                    alt="Скриншот экрана">
+                            </picture>
+                        </div>
+                        <div class="d-f jt-center ai-center how-work-section__mobile-screen js-tab-step-content">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="./images/screenMobile_768.png" />
+                                <source media="(max-width: 1024px)" srcset="./images/screenMobile_1024.png" />
+                                <source media="(max-width: 1920px)" srcset="./images/screenMobile_1920.png" />
+                                <img class="how-work-section__mobile-screen-image" src="./images/screenMobile_360.png"
+                                    alt="Скриншот экрана">
+                            </picture>
+                        </div>
+                        <div class="d-f jt-center ai-center how-work-section__mobile-screen js-tab-step-content">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="./images/screenMobile_768.png" />
+                                <source media="(max-width: 1024px)" srcset="./images/screenMobile_1024.png" />
+                                <source media="(max-width: 1920px)" srcset="./images/screenMobile_1920.png" />
+                                <img class="how-work-section__mobile-screen-image" src="./images/screenMobile_360.png"
+                                    alt="Скриншот экрана">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="d-f fd-column how-work-section__step">
+                        <div class="how-work-section__step-block">
+                            <header class="d-f how-work-section__step-header">
+                                <button class="btn step-btn js-tab-step-btn" data-tab-num-content="1"
+                                    type="button">2</button>
+                                <h3 class="how-work-section__step-title">Выберите психолога</h3>
+                            </header>
+                            <p class="how-work-section__step-desc">Выберите понравившегося психолога</p>
+                        </div>
+                        <div class="how-work-section__step-block">
+                            <header class="d-f how-work-section__step-header">
+                                <button class="btn step-btn js-tab-step-btn" data-tab-num-content="3"
+                                    type="button">4</button>
+                                <h3 class="how-work-section__step-title">Заполните простую анкету</h3>
+                            </header>
+                            <p class="how-work-section__step-desc">Все общение происходит через платформу SPEAK. Вслучае
+                                если психолог вам не понравится, вы можете заменить его без дополнительных переплат</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-f fd-column ai-center how-work-section__bottom">
+                    <div class="how-work-section__text">
+                        <h4 class="how-work-section__subtitle">Заполните простую анкету</h3>
+                            <p class="how-work-section__desc">Расскажите, что вас беспокоит и что важно в психологе.
+                            </p>
+                    </div>
+                    <a class="btn btn--big btn--blue-border shadow-grey" href="#">Начать общение</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="services-section">
+        <div class="container">
+            <div class="services-section__wrapper">
+                <h2 class="services-section__title">Услуги</h2>
+                <ul class="d-f fd-column g-30 services-section__services">
+                    <li class="d-f fd-column services-section__service services-section__service--popular">
+                        <div class="d-f ai-center jt-between services-section__service-note">
+                            <span class="services-section__service-note-text">Популярное</span>
+                            <img class="services-section__service-star-icon" src="./images/whiteStar.svg" alt="Звезда">
+                        </div>
+                        <div class="d-f fd-column jt-between g-30 services-section__service-content">
+                            <div class="d-f fd-column services-section__service-block">
+                                <h5 class="services-section__service-title">Аудио/Видео сессии</h5>
+                                <h6 class="services-section__service-subtitle">
+                                    49₽
+                                    <span class="services-section__service-slash">/</span>
+                                    <span class="services-section__service-price">1 минута</span>
+                                </h6>
+                            </div>
+                            <div class="services-section__service-block">
+                                <ul class="d-f fd-column g-10 services-section__service-items">
+                                    <li class="d-f ai-first-baseline services-section__service-item">
+                                        <div
+                                            class="d-f jt-center ai-center services-section__service-item-mark services-section__service-item-mark--white">
+                                            <img class="services-section__service-item-icon"
+                                                src="./images/whiteCheck.svg" alt="Галочка">
+                                        </div>
+                                        <p class="services-section__service-item-desc">Безлимитный доступа к чату с
+                                            психологом до начала сессии</p>
+                                    </li>
+                                    <li class="d-f ai-first-baseline services-section__service-item">
+                                        <div
+                                            class="d-f jt-center ai-center services-section__service-item-mark services-section__service-item-mark--white">
+                                            <img class="services-section__service-item-icon"
+                                                src="./images/whiteCheck.svg" alt="Галочка">
+                                        </div>
+                                        <p class="services-section__service-item-desc">Аудио/Видео звонки</p>
+                                    </li>
+                                    <li class="d-f ai-first-baseline services-section__service-item">
+                                        <div
+                                            class="d-f jt-center ai-center services-section__service-item-mark services-section__service-item-mark--white">
+                                            <img class="services-section__service-item-icon"
+                                                src="./images/whiteCheck.svg" alt="Галочка">
+                                        </div>
+                                        <p class="services-section__service-item-desc">Нет лимитов по времени разговора
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div
+                                class="d-f fd-column g-20 services-section__service-block services-section__service-bottom">
+                                <div class="d-f ai-center jt-between services-section__service-calculator">
+                                    <div class="d-f ai-center jt-between services-section__service-calculator-block">
+                                        <button
+                                            class="d-f jt-center ai-center btn services-section__service-calculator-btn"
+                                            data-service-calc-btn="decrease" type="button">
+                                            <img class="services-section__service-calculator-arrow-left-icon"
+                                                src="./images/play.svg" alt="Стрелка, указывающая влево">
+                                        </button>
+                                        <input class="services-section__service-calculator-input"
+                                            data-calculator-input="value" type="text">
+                                        <button
+                                            class="d-f jt-center ai-center btn services-section__service-calculator-btn"
+                                            data-service-calc-btn="increase" type="button">
+                                            <img class="services-section__service-calculator-arrow-right-icon"
+                                                src="./images/play.svg" alt="Стрелка, указывающая вправо">
+                                        </button>
+                                    </div>
+                                    <div class="d-f ai-center services-section__service-calculator-block">
+                                        <span class="services-section__service-calculator-text">min</span>
+                                        <div class="services-section__service-calculator-line"></div>
+                                        <input class="services-section__service-calculator-input"
+                                            data-calculator-input="result" type="text" readonly>
+                                    </div>
+                                    <div class="services-section__service-calculator-block">
+                                        <span class="services-section__service-calculator-text">₽</span>
+                                    </div>
+                                </div>
+                                <a class="btn btn--white btn--big d-f jt-center ai-center shadow-grey services-section__link"
+                                    href="#">Перейти</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="services-section__service">
+                        <div class="d-f fd-column jt-between g-30 services-section__service-content">
+                            <div class="d-f fd-column services-section__service-block">
+                                <h5 class="services-section__service-title">24 часа чата</h5>
+                                <h6 class="services-section__service-subtitle">
+                                    4200₽
+                                    <span class="services-section__service-price">/ 24 часа</span>
+                                </h6>
+                            </div>
+                            <div class="services-section__service-block">
+                                <ul class="d-f fd-column g-10 services-section__service-items">
+                                    <li class="d-f ai-first-baseline services-section__service-item">
+                                        <div
+                                            class="d-f jt-center ai-center services-section__service-item-mark services-section__service-item-mark--green">
+                                            <img class="services-section__service-item-icon" src="./images/check.svg"
+                                                alt="Галочка">
+                                        </div>
+                                        <p class="services-section__service-item-desc">24 часа доступа к чату с
+                                            психологом</p>
+                                    </li>
+                                    <li class="d-f ai-first-baseline services-section__service-item">
+                                        <div
+                                            class="d-f jt-center ai-center services-section__service-item-mark services-section__service-item-mark--green">
+                                            <img class="services-section__service-item-icon" src="./images/check.svg"
+                                                alt="Галочка">
+                                        </div>
+                                        <p class="services-section__service-item-desc">Аудио сообщения</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a class="btn btn--white d-f jt-center ai-center btn--big shadow-grey services-section__link"
+                                href="#">Перейти</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="download-section">
+        <div class="container">
+            <div class="d-f fd-column ai-center download-section__wrapper download-section__wrapper-mobile">
+                <div class="d-f jt-center download-section__mobile">
+                    <img class="download-section__mobile-image" src="./images/phone_p.png" alt="Телефон">
+                </div>
+                <div class="download-section__content download-section__mobile-content">
+                    <div class="download-section__wrapper-block">
+                        <h2 class="download-section__title">Скачайте бесплатно приложение SPEAK</h2>
+                    </div>
+                    <div class="d-f g-15 download-section__wrapper-block">
+                        <div class="d-f jt-center ai-center download-section__app-logo shadow-black">
+                            <img class="download-section__app-logo-image" src="./images/app-logo.svg" alt="S">
+                        </div>
+                        <div class="download-section__app-info">
+                            <h2 class="download-section__app-title">speak</h2>
+                            <p class="download-section__app-desc">
+                                онлайн сессии с психологом
+                                <br />
+                                доступно для iOS и Android
+                            </p>
+                        </div>
+                    </div>
+                    <div class="download-section__wrapper-block download-section__links d-f ai-center jt-center g-20">
+                        <a class="shadow-grey download-section__link" href="https://www.apple.com/ru/shop/goto/store">
+                            <img src="./images/appstore.png" alt="App Store">
+                        </a>
+                        <a class="shadow-grey download-section__link"
+                            href="https://play.google.com/store/apps/details?id=com.scopely.monopolygo&hl=ru&gl=US">
+                            <img src="./images/playstore.png" alt="Google Play">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="reviews-section">
+        <div class="container">
+            <div class="reviews-section__wrapper">
+                <h2 class="reviews-section__title">Отзывы</h2>
+                <div class="slider glide reviews-section__slider">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="slider__slides glide__slides">
+                            <li class="d-f fd-column slider__slide glide__slide shadow-black">
+                                <div class="d-f slider__slide-top">
+                                    <img class="slider__slide-avatar" src="./images/imgAvatar1.png" alt="София Джонес">
+                                    <div class="d-f fd-column slider__slide-info">
+                                        <ul class="d-f ai-center g-5 slider__slide-stars">
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                        </ul>
+                                        <div class="d-f fd-column slider__slide-headings">
+                                            <h4 class="slider__slide-username">Sophia Jones</h4>
+                                            <h3 class="slider__slide-job">Teacher</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__slide-bottom">
+                                    <p class="slider__slide-desc">
+                                        After just 2 months, Speak has already made such an impact on my life. It has
+                                        helped me develop manageable solutions to feelings of stress, anxiety, and
+                                        overwhelm. Speaker helped me navigate the difficult stages of grief after losing
+                                        my mom, with compassion and encouragement. And she’s easy to open up to, making
+                                        me feel heard and understood.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="d-f fd-column slider__slide glide__slide shadow-black">
+                                <div class="d-f slider__slide-top">
+                                    <img class="slider__slide-avatar" src="./images/imgAvatar1.png" alt="София Джонес">
+                                    <div class="d-f fd-column slider__slide-info">
+                                        <ul class="d-f ai-center g-5 slider__slide-stars">
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                        </ul>
+                                        <div class="d-f fd-column slider__slide-headings">
+                                            <h4 class="slider__slide-username">Sophia Jones</h4>
+                                            <h3 class="slider__slide-job">Teacher</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__slide-bottom">
+                                    <p class="slider__slide-desc">
+                                        After just 2 months, Speak has already made such an impact on my life. It has
+                                        helped me develop manageable solutions to feelings of stress, anxiety, and
+                                        overwhelm. Speaker helped me navigate the difficult stages of grief after losing
+                                        my mom, with compassion and encouragement. And she’s easy to open up to, making
+                                        me feel heard and understood.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="d-f fd-column slider__slide glide__slide shadow-black">
+                                <div class="d-f slider__slide-top">
+                                    <img class="slider__slide-avatar" src="./images/imgAvatar1.png" alt="София Джонес">
+                                    <div class="d-f fd-column slider__slide-info">
+                                        <ul class="d-f ai-center g-5 slider__slide-stars">
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                        </ul>
+                                        <div class="d-f fd-column slider__slide-headings">
+                                            <h4 class="slider__slide-username">Sophia Jones</h4>
+                                            <h3 class="slider__slide-job">Teacher</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__slide-bottom">
+                                    <p class="slider__slide-desc">
+                                        After just 2 months, Speak has already made such an impact on my life. It has
+                                        helped me develop manageable solutions to feelings of stress, anxiety, and
+                                        overwhelm. Speaker helped me navigate the difficult stages of grief after losing
+                                        my mom, with compassion and encouragement. And she’s easy to open up to, making
+                                        me feel heard and understood.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="d-f fd-column slider__slide glide__slide shadow-black">
+                                <div class="d-f slider__slide-top">
+                                    <img class="slider__slide-avatar" src="./images/imgAvatar1.png" alt="София Джонес">
+                                    <div class="d-f fd-column slider__slide-info">
+                                        <ul class="d-f ai-center g-5 slider__slide-stars">
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                        </ul>
+                                        <div class="d-f fd-column slider__slide-headings">
+                                            <h4 class="slider__slide-username">Sophia Jones</h4>
+                                            <h3 class="slider__slide-job">Teacher</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__slide-bottom">
+                                    <p class="slider__slide-desc">
+                                        After just 2 months, Speak has already made such an impact on my life. It has
+                                        helped me develop manageable solutions to feelings of stress, anxiety, and
+                                        overwhelm. Speaker helped me navigate the difficult stages of grief after losing
+                                        my mom, with compassion and encouragement. And she’s easy to open up to, making
+                                        me feel heard and understood.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="d-f fd-column slider__slide glide__slide shadow-black">
+                                <div class="d-f slider__slide-top">
+                                    <img class="slider__slide-avatar" src="./images/imgAvatar1.png" alt="София Джонес">
+                                    <div class="d-f fd-column slider__slide-info">
+                                        <ul class="d-f ai-center g-5 slider__slide-stars">
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                            <li class="slider__slide-star">
+                                                <img class="slider__slide-star-icon" src="./images/star.svg"
+                                                    alt="Звезда">
+                                            </li>
+                                        </ul>
+                                        <div class="d-f fd-column slider__slide-headings">
+                                            <h4 class="slider__slide-username">Sophia Jones</h4>
+                                            <h3 class="slider__slide-job">Teacher</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__slide-bottom">
+                                    <p class="slider__slide-desc">
+                                        After just 2 months, Speak has already made such an impact on my life. It has
+                                        helped me develop manageable solutions to feelings of stress, anxiety, and
+                                        overwhelm. Speaker helped me navigate the difficult stages of grief after losing
+                                        my mom, with compassion and encouragement. And she’s easy to open up to, making
+                                        me feel heard and understood.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-f ai-center jt-center slider__dots glide__bullets" data-glide-el="controls[nav]">
+                        <button class="btn slider__dot glide__bullet" data-glide-dir="=0" type="button"></button>
+                        <button class="btn slider__dot glide__bullet" data-glide-dir="=1" type="button"></button>
+                        <button class="btn slider__dot glide__bullet" data-glide-dir="=2" type="button"></button>
+                        <button class="btn slider__dot glide__bullet" data-glide-dir="=3" type="button"></button>
+                        <button class="btn slider__dot glide__bullet" data-glide-dir="=4" type="button"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="seo-section">
+        <div class="container">
+            <div class="seo-section__wrapper">
+                <h2 class="seo-section__title">Детский психолог онлайн</h2>
+                <div class="seo-section__content">
+                    <ul class="d-f g-30 fd-column seo-section__questions">
+                        <li class="d-f fd-column seo-section__question">
+                            <h4 class="seo-section__question-title">Чем поможет детский психолог онлайн?</h4>
+                            <p class="seo-section__question-desc">
+                                Каждый родитель хочет, чтобы его ребенок рос сильной уравновешенной личностью. Мы
+                                понимаем, что именно в детстве формируются зачатки характера. Как справиться с
+                                возникающими проблемами, как выстроить отношения с ребенком, чтобы он доверял вам? На
+                                эти и другие вопросы поможет ответить детский психолог онлайн.
+                            </p>
+                        </li>
+                        <li class="d-f fd-column seo-section__question">
+                            <h4 class="seo-section__question-title">Преимущества онлайн-консультации детского психолога
+                            </h4>
+                            <p class="seo-section__question-desc">
+                                Главный плюс сеанса в таком формате – экономия времени. Вам не придется тратить время на
+                                дорогу и долгие сборы. Все, что нужно – компьютер или смартфон, микрофон и блокнот с
+                                ручкой, чтобы записывать важную информацию. Если вам или ребенку тяжело общаться с
+                                незнакомым человеком лично, онлайн-связь в этом случае упростит дело.
+                            </p>
+                        </li>
+                        <li class="d-f fd-column seo-section__question">
+                            <h4 class="seo-section__question-title">Когда нужна помощь детского психолога онлайн?</h4>
+                            <p class="seo-section__question-desc">
+                                Онлайн-консультация детского психолога может быть полезна, если у вас есть вопросы по
+                                таким темам, как:
+                            <ul class="d-f fd-column g-5 seo-section__question-list">
+                                <li class="d-f ai-center seo-section__question-list-item">Плохая успеваемость;</li>
+                                <li class="d-f ai-center seo-section__question-list-item">Стеснительность;</li>
+                                <li class="d-f ai-center seo-section__question-list-item">Цифровая зависимость;</li>
+                                <li class="d-f ai-center seo-section__question-list-item">Агрессия;</li>
+                                <li class="d-f ai-center seo-section__question-list-item">Потеря близкого в семье;</li>
+                                <li class="d-f ai-center seo-section__question-list-item">Возрастной кризис;</li>
+                                <li class="d-f ai-center seo-section__question-list-item">Подготовка к детскому саду или
+                                    школе;</li>
+                                <li class="d-f ai-center seo-section__question-list-item">Профориентация.</li>
+                            </ul>
+                            Это лишь часть тем, которые можно затронуть. Помните, что, если возникает ситуация, в
+                            которой вы самостоятельно не можете разобраться, сейчас консультация детского психолога
+                            онлайн поможет найти ответы.
+                            </p>
+                        </li>
+                        <li class="d-f fd-column seo-section__question">
+                            <h4 class="seo-section__question-title">Как проходит онлайн-консультация детского психолога?
+                            </h4>
+                            <p class="seo-section__question-desc">
+                                Задать вопрос детскому психологу онлайн может как сам ребенок, так и родитель. На первом
+                                сеансе обычно присутствует родитель или опекун, а также сам «виновник торжества».
+                                Следующие сеансы могут быть и без взрослого, если ребенок сам в состоянии связаться
+                                через интернет.
+                                <br />
+                                <br />
+                                Бывает и так, что сначала ребенку присутствовать необязательно. В этом случае работа
+                                происходит с родителем, а если есть необходимость, позже присоединяется ребенок.
+                                <br />
+                                <br />
+                                Психолог по детским вопросам онлайн может попросить ребенка нарисовать что-то, далее по
+                                этим рисункам он проведет диагностику. Родитель тоже является звеном связи с психикой
+                                ребенка. Через него психолог может сделать вывод о том, какая проблема сейчас назрела.
+                                <br />
+                                <br />
+                                Если специалист попросит вас пройти обследование или сдать анализы для более ясной
+                                картины, не пугайтесь, это нормально. Таким образом, вы оба сможете исключить какие-либо
+                                диагнозы
+                            </p>
+                        </li>
+                        <li class="d-f fd-column seo-section__question">
+                            <h4 class="seo-section__question-title">О чем поговорить с детским психологом?</h4>
+                            <p class="seo-section__question-desc">
+                                Родители малышей часто обращаются с вопросами об адаптации в детском саду. Есть
+                                тревожные мамы, которые сомневаются, стоит ли отдавать малыша в сад или же пока слишком
+                                рано. Очень многих волнует, что воспитатель будет срываться на ребенка. Это логично,
+                                ведь в силу того, что в СМИ регулярно появляются жуткие новости о чудовищных ЧП в
+                                детсадах, беспокойство обосновано.
+                                <br />
+                                <br />
+                                Отдельный вопрос подготовки к саду. В интернете полно информации в таком ключе: «ребенок
+                                должен научиться самостоятельно есть, ходить в туалет и засыпать сам перед тем, как идти
+                                в сад». Особо мнительные беспрекословно верят, другие понимают: ребенок ничего никому не
+                                должен. Его невозможно научить чему-то, пока он сам не захочет делать это. «Дрессировке»
+                                малыши не поддаются. Но пугаться не стоит, в любом случае, воспитатели будут помогать
+                                малышам в этих вопросах. Главное – настроиться на позитив и верить в хорошее.
+                                <br />
+                                <br />
+                                Дети постарше сталкиваются с проблемами переходного возраста, неуверенностью в себе,
+                                безответной любовью и другими. Если вы понимаете, что вам с чадом необходима
+                                онлайн-консультация, вы можете выбрать специалиста на нашем сайте.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="d-f fd-column g-40 footer__wrapper">
+                <div class="footer__wrapper-block">
+                    <a class="logo__link footer__logo" href="#">
+                        <img class="logo" src="./images/logo.svg" alt="Логотип SPEAK">
+                    </a>
+                    <ul class="d-f fw-wrap g-20 footer__list">
+                        <li class="d-f fd-column g-20 footer__list-item">
+                            <a class="footer__list-link" href="#">Home</a>
+                            <a class="footer__list-link" href="#">Blog</a>
+                        </li>
+                        <li class="d-f fd-column g-20 footer__list-item">
+                            <a class="footer__list-link" href="#">About us</a>
+                            <a class="footer__list-link" href="#">Contact</a>
+                        </li>
+                        <li class="d-f fd-column g-20 footer__list-item">
+                            <a class="footer__list-link" href="#">Privacy Policy</a>
+                            <a class="footer__list-link" href="#">Terms and Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__wrapper-block">
+                    <ul class="d-f ai-center g-20 footer__socials">
+                        <li class="footer__social">
+                            <a class="footer__social-link" href="#">
+                                <img class="footer__social-icon" src="./images/facebook.svg" alt="facebook">
+                            </a>
+                        </li>
+                        <li class="footer__social">
+                            <a class="footer__social-link" href="#">
+                                <img class="footer__social-icon" src="./images/instagram.svg" alt="instagram">
+                            </a>
+                        </li>
+                        <li class="footer__social">
+                            <a class="footer__social-link" href="#">
+                                <img class="footer__social-icon" src="./images/linkedin.svg" alt="linkedin">
+                            </a>
+                        </li>
+                        <li class="footer__social">
+                            <a class="footer__social-link" href="#">
+                                <img class="footer__social-icon" src="./images/twitter.svg" alt="twitter">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="d-f fd-column footer__contacts">
+                        <li class="footer__contact">
+                            <a class="d-f ai-center footer__contact-link" href="mailto:info@speak.help">
+                                <img class="footer__contact-icon" src="./images/mail.svg" alt="Почта">
+                                <span class="footer__contact-text">info@speak.help</span>
+                            </a>
+                        </li>
+                        <li class="footer__contact">
+                            <a class="d-f ai-center footer__contact-link" href="#">
+                                <img class="footer__contact-icon" src="./images/pin.svg" alt="Координаты">
+                                <span class="footer__contact-text">33 W 60th Street, 8th FI New York, NY 10023</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
